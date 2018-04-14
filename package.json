@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bookshelf": "^0.13.3",
     "express": "^4.16.3",
-    "nodemon": "^1.17.3"
+    "knex": "^0.14.6",
+    "nodemon": "^1.17.3",
+    "pg": "^7.4.1"
   }
 }
