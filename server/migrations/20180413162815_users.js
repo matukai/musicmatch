@@ -8,6 +8,8 @@ exports.up = function(knex, Promise) {
     table.string('username').notNullable().unique();
     table.string('password').notNullable().unique();
     table.integer('dateofbirth').notNullable();
+    table.integer('artists_id');
+    table.foreign('artists_id').references('id').inTable('artists');
     table.timestamp('created_at').defaultTo(knex.fn.now());
     table.timestamp('updated_at').defaultTo(knex.fn.now());
   });
