@@ -6,10 +6,10 @@ angular.module('myApp')
   $routeProvider
   .when('/', {
     controller: 'HomeController',
-    templateUrl: '/views/home.html'
+    templateUrl: './views/home.html'
   })
   .when('/login', {
     controller: 'LoginController',
-    templateUrl: '/views/login.html'
+    templateUrl: './views/login.html'
   })
 })
